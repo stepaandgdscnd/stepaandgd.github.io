@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepaAndGD</title>
+    <link rel="icon" href="static/icon.png">
+    <style>
+        @keyframes fade-right {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+                color: rgb(0, 111, 214);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(10px);
+            }
+        }
+        @keyframes fade-right {
+            from {
+                opacity: 0;
+                transform: translateY(0);
+                color: rgb(0, 111, 214);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(10px);
+            }
+        }
+        .separator
+        {
+            width: 95vw;
+            height: 10px;
+            background-color: rgba(0, 134, 0, 0.5);
+            border-radius: 5px;
+        }
+        img
+        {
+            transition: transform 250ms ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.025);
+        }
+    </style>
+    <style>
+        footer
+        {
+            margin-top: 100px;
+            height: 150px;
+            width: 100%;
+            background-color: rgb(36, 128, 0);
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        @font-face {
+            font-family: "MTS Wide";
+            src: url("static/MTS_Font_Classic.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "MTS Wide";
+            src: url("static/MTS_Font.ttf") format("truetype");
+            font-weight: bold;
+            font-style: normal;
+        }
+        body
+        {
+            margin: 0;
+            font-family: MTS Wide;
+            background-color: rgb(148, 255, 153);
+        }
+        header
+        {
+            width: 100%;
+            height: 10vh;
+            background-color: rgba(0, 134, 0, 0.5);
+            border-radius: 0 0 50px 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-items: center;
+            top: 0;
+            position: sticky;
+            z-index: 100;
+        }
+        header button
+        {
+            height: 5vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            border-radius: 2.5vh;
+            background-color: rgb(21, 255, 0);
+            border: 3px rgb(73, 151, 63) solid;
+            font-family: MTS Wide;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><button>Главная</button></a>
+        <a href="#" style="margin-left: 5%;"><button>Игры</button></a>
+    </header>
+    <div style="height: 100vh; width: 100%; align-items: center; display: flex;">
+        <div>
+            <h1 style="margin-left: calc(10vw - 10px); animation-duration: 1000ms; animation-name: fade-right; animation-fill-mode: forwards;">Игры</h1>
+        </div>
+    </div>
+    <div style="width: 100%; align-items: center; display: flex; text-align: center; justify-content: center;">
+        <div style="width: 95%; padding-top: 25px; padding-bottom: 25px; background-color: beige; border-radius: 25px;">
+            <a href="static/7dtl.png"><img src="static/7dtl.png" alt="" style="border-radius: 50px;"></a>
+            <h1>7 days to live</h1>
+            <p>Идея
+               <br><br>
+               Это игра там, где вы должны выживать! Вы должны создавать новые предметы, драться с монстрами, заниматься рукоделием, заниматься земледелием и д.р.
+            </p>
+            <a href="https://storage.yandexcloud.net/platform-prod/projects/664de6fa52e03.zip">Ссылка на скачивание</a>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div style="width: 100%; align-items: center; display: flex; text-align: center; justify-content: center;">
+        <div style="width: 95%; padding-top: 25px; padding-bottom: 25px; background-color: beige; border-radius: 25px;">
+            <a href="static/nan.png"><img src="static/nan.png" alt="" style="border-radius: 50px;"></a>
+            <h1>NaN Progression</h1>
+            <p>Управление: Стрелки, WASD, E
+                <br>
+                Жанр: Головоломка
+            </p>
+            В разработке...
+        </div>
+        <br>
+    </div>
+    
+    <footer>
+        <p style="font-size:larger; margin-bottom: 0;">StepaAndGD</p>
+        <p style="font-size: smaller;">Всё создано без помощи ИИ или конструкторов.</p>
+    </footer>
+</body>
+</html>
